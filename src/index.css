@@ -1,0 +1,66 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap'); /* A techy vibe font */
+
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #e0e0e0;
+  background-color: #0d0d1a; /* Very dark blue */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden; /* Prevent scrollbars due to canvas sizing */
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Subtle grid background */
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px; /* Adjust grid density */
+}
+
+/* Basic button styling */
+button {
+  background-color: rgba(30, 144, 255, 0.2); /* DodgerBlue subtle */
+  border: 1px solid rgba(30, 144, 255, 0.5);
+  color: #e0e0e0;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9em;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+button:hover {
+  background-color: rgba(30, 144, 255, 0.4);
+  border-color: rgba(30, 144, 255, 0.7);
+}
+
+button:active {
+  transform: scale(0.98);
+}
