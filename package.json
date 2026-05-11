@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "framer-motion": "^latest_version_here", // Make sure this line exists
-    "react": "^...",
-    "react-dom": "^...",
-    "react-scripts": "..."
+    "framer-motion": "12.38.0", // Make sure this line exists
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
